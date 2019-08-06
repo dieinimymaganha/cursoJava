@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import entities.enums.WorkerLeval;
-import sun.util.resources.ext.CalendarData_el;
+import entities.enums.WorkerLevel;
+
 
 public class Worker {
 	private String name;
-	private WorkerLeval leval;
+	private WorkerLevel leval;
 	private Double baseSalary;
 	
 	private Department department;
@@ -19,7 +19,7 @@ public class Worker {
 		
 	}
 
-	public Worker(String name, WorkerLeval leval, Double baseSalary, Department department) {
+	public Worker(String name, WorkerLevel leval, Double baseSalary, Department department) {
 		this.name = name;
 		this.leval = leval;
 		this.baseSalary = baseSalary;
@@ -34,11 +34,11 @@ public class Worker {
 		this.name = name;
 	}
 
-	public WorkerLeval getLeval() {
+	public WorkerLevel getLeval() {
 		return leval;
 	}
 
-	public void setLeval(WorkerLeval leval) {
+	public void setLeval(WorkerLevel leval) {
 		this.leval = leval;
 	}
 
